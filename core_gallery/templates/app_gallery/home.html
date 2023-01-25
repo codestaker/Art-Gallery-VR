@@ -1,0 +1,42 @@
+
+{% extends 'brand/base.html' %}
+
+{% block content %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">PELUMI'S 360 ART GALLERY</h1>
+        <p class="lead text-muted">
+            Click on the images to move them
+        </p>
+      </div>
+    </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        {% for gallery_image in images.all %}
+        <div class="col">
+          <div class="card shadow-sm">
+           
+          <a href=" {{gallery_image.id}}">
+            <img src="{{ gallery_image.image.url }}" alt="content image" width="100%" height="225">
+          </a>
+            <div class="card-body">
+              <p class="card-text">
+              {{gallery_image.summary}}  
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div> 
+        {% endfor %}
+        
+        
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}

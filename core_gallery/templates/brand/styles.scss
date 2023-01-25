@@ -1,0 +1,50 @@
+$primary-color: #1f1f1f;
+$secondary-color: #f1f1f1;
+$tertiary-color: #333;
+
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+body {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $tertiary-color;
+    background-color: $secondary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+    padding: 0.5rem;
+}

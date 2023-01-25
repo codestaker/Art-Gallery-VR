@@ -1,0 +1,21 @@
+{% extends 'brand/base.html' %}
+
+{% block content %}
+<div class="container pt-3">   
+<h1> {{app_image.title}}</h1>
+    
+    <a-scene embedded>
+        <a-sky src="{{ app_image.image.url  }}" alt=""> </a-sky>
+    </a-scene>
+    <div class="pt-3">
+    <p>
+
+        {{app_image.summary}}
+    </p>
+    <hr>
+    </div>
+</div> 
+{% endblock %}  
+
+</body>
+</html>
